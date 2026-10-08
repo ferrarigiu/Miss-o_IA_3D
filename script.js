@@ -20,55 +20,55 @@ const perguntas = [
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial (IA), uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre elaIA. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de tecnologia em sala de aula. Qual atitude você toma?",
+        enunciado: "Primeiramente, você deve estar disposto a reservar um pouco do seu dinheiro para investir.É necessário pensar no futuro. Quantos % da sua renda mensal você pretende separar para investir?",
         alternativas: [
             {
-                texto:"Utilizar uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento",
+                texto:"Consigo reservar 30% da minha renda mensal para investimentos",
                 afirmacao:"afirmacao"
             },
             {
-                texto: "Escrever o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
+                texto: "Consigo reservar no máximo 10% da minha renda. Mas me comprometo a sempre investir mais se conseguir.",
                 afirmacao:"afirmacao"
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "Para invetirmos, temos a opção de sermos investidores mais conservadores ou mais arrojados. Os conservadores preferem investir em renda fixa e os arrojados em renda variável. Qual você prefere?",
         alternativas: [
             {
-                texto:"Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
+                texto:"Prefiro investir em renda fixa, pois gosto de ter mais segurança e previsibilidade nos investimentos.",
                 afirmacao:"afirmacao"
             },
             {
-                texto:"Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao:"afirmacao"
-            }
-            
-        ]
-    },
-    {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
-        alternativas: [
-            {
-                texto:"Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao:"afirmacao"
-            },
-            {
-                texto:"Criar uma imagem utilizando um gerador de imagem de IA.",
+                texto:"Meu perfil é mais arrojado, e não me importo em correr riscos em prol de uma maior rentabilidade.",
                 afirmacao:"afirmacao"
             }
             
         ]
     },
     {
-        enunciado: " Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda de uma IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz?",
+        enunciado: "De acordo com o seu perfil de investidor, escolha os tipos de investimento que você prefere investir.",
         alternativas: [
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
+                texto:"Quero investir em ações, fundos imobiliários e BDRs. Aceito o maior risco e a imprevisibilidade para aumentar meus resultados",
                 afirmacao:"afirmacao"
             },
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
+                texto:"Prefiro investir em Títulos do tesouro direto, em CDBs e em LCAs e LCIs. Escolho a previsibilidade e segurança.",
+                afirmacao:"afirmacao"
+            }
+            
+        ]
+    },
+    {
+        enunciado: " E pronto, agora tenha paciência e você verá seus resultados crescerem com o tempo. Lembre-se de manter constância e nunca deixar de investir todos os meses.",
+        alternativas: [
+            {
+                texto: "Vou me comprometer a investir todo mês e com paciência esperar meus resultados.",
+                afirmacao:"afirmacao"
+            },
+            {
+                texto: "Não vou me comprometer a investir todo mês, mas vou tentar investir sempre que possível, mas vou ter em mente que os resultados podem demorar um pouco mais.",
                 afirmacao:"afirmacao"
             }
             
@@ -109,8 +109,8 @@ function respostaSelecionada(opcaoSelecionada){
 }
 
 function mostraResultado(){
-    caixaPerguntas.textContent = "Em 2049...";
-    textoResultado.textContent = historiaFinal;
+    caixaPerguntas.textContent = "Em 2027...";
+    textoResultado.textContent = Eu serei um investidor de sucesso.;
     caixaAlternativas.textContent = ""; 
 }
 
