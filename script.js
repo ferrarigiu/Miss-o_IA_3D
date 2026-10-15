@@ -7,73 +7,107 @@ const textoResultado = document.querySelector(".texto-resultado");
 const perguntas = [
     {
         enunciado: "Você tem um futuro inteiro pela frente, mas para fazer suas próprias escolhas, precisa de segurança financeira. Qual sua visão sobre isso?",
-        alternativas:[    
+        alternativas: [   
         {
                 texto: "Vou depender dos meus pais para sempre",
-                afirmacao: "afirmacao"
+                afirmacao: [
+                    "Não sinto a urgência de ter minha própria inependência.",
+                    "Meus pais me bancam.",
+                ],
             },
             {
                 texto: "Quero conquistar minha liberdade financeira!",
-                afirmacao: "afirmacao"
-            }           
-            
-        ]
+                afirmacao: [
+                    "Preciso ter minha própria autonomia.",
+                    "Meus pais combram isso de mim também.",
+                ],
+            },
+            ],         
     },
+      
     {
         enunciado: "Primeiramente, você deve estar disposto a reservar um pouco do seu dinheiro para investir.É necessário pensar no futuro. Quantos % da sua renda mensal você pretende separar para investir?",
         alternativas: [
             {
                 texto:"Consigo reservar 30% da minha renda mensal para investimentos",
-                afirmacao:"afirmacao"
+                afirmacao:[
+                    "Tenho um boa fonte de renda e consigo separar 30% somente para investimentos.",
+                    "Não me importo de deixar de comprar as coisas que quero para investir.",
+                ],
             },
             {
                 texto: "Consigo reservar no máximo 10% da minha renda. Mas me comprometo a sempre investir mais se conseguir.",
-                afirmacao:"afirmacao"
-            }
-        ]
+                afirmacao:[
+                    "Minha renda não é tão alta",
+                    "Se eu separar mais de 10% vai fazer falta para as contas básicas",
+                ],
+            },
+            ],
     },
     {
         enunciado: "Para invetirmos, temos a opção de sermos investidores mais conservadores ou mais arrojados. Os conservadores preferem investir em renda fixa e os arrojados em renda variável. Qual você prefere?",
         alternativas: [
             {
-                texto:"Prefiro investir em renda fixa, pois gosto de ter mais segurança e previsibilidade nos investimentos.",
-                afirmacao:"afirmacao"
+                texto:"Prefiro investir em renda fixa, pois gosto de ter mais segurança e previsibilidade nos investimentos",
+                afirmacao:[
+                    "Gosto de previsibilidade",
+                    "Não gosto de me arriscar muito.",
+            ],
             },
             {
+    
                 texto:"Meu perfil é mais arrojado, e não me importo em correr riscos em prol de uma maior rentabilidade.",
-                afirmacao:"afirmacao"
-            }
-            
-        ]
+                afirmacao:[
+                    "Faço questão de altas rentabilidades.",
+                    "Não tenho meod de enventuais oscilações do mercado.",
+                   ],
+            },
+            ],
     },
     {
+    
         enunciado: "De acordo com o seu perfil de investidor, escolha os tipos de investimento que você prefere investir.",
         alternativas: [
             {
                 texto:"Quero investir em ações, fundos imobiliários e BDRs. Aceito o maior risco e a imprevisibilidade para aumentar meus resultados",
-                afirmacao:"afirmacao"
+                afirmacao:[
+                    "Gosto de investir nas empresas que aprecio na bolsa de valores.",
+                    "Gosto de receber dividendos mensais e semestrais.",
+                
+                ],
             },
             {
                 texto:"Prefiro investir em Títulos do tesouro direto, em CDBs e em LCAs e LCIs. Escolho a previsibilidade e segurança.",
-                afirmacao:"afirmacao"
-            }
-            
-        ]
-    },
+                afirmacao:[
+                    "Gosto de títulos públicos.",
+                    "Preiro títulos atrelado à taxas e juros e à inflação.",
+                ],
+            },
+
+        ],
+        },
+    
     {
         enunciado: " E pronto, agora tenha paciência e você verá seus resultados crescerem com o tempo. Lembre-se de manter constância e nunca deixar de investir todos os meses.",
         alternativas: [
             {
                 texto: "Vou me comprometer a investir todo mês e com paciência esperar meus resultados.",
-                afirmacao:"afirmacao"
+                afirmacao:[
+                    "Vou investir todos os meses.",
+                    "Mantendo constancia vou atingir meus objetivos.",
+                    
+                ],
             },
             {
                 texto: "Não vou me comprometer a investir todo mês, mas vou tentar investir sempre que possível, mas vou ter em mente que os resultados podem demorar um pouco mais.",
-                afirmacao:"afirmacao"
+                afirmacao:[
+                    "Não tenho paciência para esperar os resultados.",
+                    "Prefiro depender somente da minha única fonte de renda e evitar riscos.",
+                ],
             }
             
             
-        ]
+        ],
     },
 ];
 
@@ -110,7 +144,7 @@ function respostaSelecionada(opcaoSelecionada){
 
 function mostraResultado(){
     caixaPerguntas.textContent = "Em 2027...";
-    textoResultado.textContent = Eu serei um investidor de sucesso.;
+    textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = ""; 
 }
 
